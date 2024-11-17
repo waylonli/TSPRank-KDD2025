@@ -1,0 +1,16 @@
+fsspec==2024.3.1
+gurobipy==11.0.1
+lightgbm==4.4.0
+networkx==3.2.1
+numpy==2.0.0
+pandas==2.2.2
+PyYAML==6.0.1
+PyYAML==6.0.1
+scikit_learn==1.4.0
+scipy==1.14.0
+torch==2.2.1+cu121
+tqdm==4.66.1
+transformers==4.40.1
+xgboost==2.1.0
+python-dotenv==1.0.1
+wandb==0.17.4
