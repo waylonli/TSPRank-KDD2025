@@ -1,4 +1,4 @@
-# TSPRank
+# [KDD'25] TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model
 
 ## 1. Environment Setup
 
