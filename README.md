@@ -13,12 +13,11 @@ If PyTorch does not install properly, please refer to the official PyTorch insta
 
 ## 2. Download Data and Pretrained Models
 
-Download the demo data and pretrained models for MQ2008-list from the following link: 
-- Demo data: https://www.dropbox.com/scl/fi/92zt2d8gnwx27p867uzx5/demo_data.zip?rlkey=fbpawm4esxvk7ip2kac3nsrqy&st=4tzs6jfb&dl=0
-- Pretrained model checkpoints: https://www.dropbox.com/scl/fi/q5wedw0wwikrnjt4py3du/demo_checkpoints.zip?rlkey=dud31gx2nktzgzkoi7otdvkje&st=4lknnc8a&dl=0
+Download the preprocessed data and pretrained models from the following link: 
+- Data: https://bollin.inf.ed.ac.uk/public/direct/tsprank/data.zip (15.5GB)
+- Pretrained model checkpoints: https://bollin.inf.ed.ac.uk/public/direct/tsprank/checkpoints.zip (13.6GB)
 
-Due to the anonymous review process, we are unable to provide the complete data and models with the size limitation of free cloud storage services.
-__<u>We will provide the COMPLETE data and models upon acceptance.</u>__
+After downloaded, extract the "data" and "checkpoints" folders into the project's root directory for use.
 
 ## 3. Reproduce Results
 
