@@ -1,6 +1,6 @@
 # [KDD'25] TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model
 
-[![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=2405.10800&color=red&logo=arxiv)](https://arxiv.org/abs/2411.12064) (including complete result tables)
+[![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=2411.12064&color=red&logo=arxiv)](https://arxiv.org/abs/2411.12064) (including complete result tables)
 
 ### Citation
 
