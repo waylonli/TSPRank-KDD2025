@@ -1,5 +1,21 @@
 # [KDD'25] TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model
 
+[![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=2405.10800&color=red&logo=arxiv)](https://github.com/waylonli/TSPRank-KDD2025) (including complete result tables)
+
+### Citation
+
+```
+@misc{li2024tsprankbridgingpairwiselistwise,
+      title={TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model}, 
+      author={Weixian Waylon Li and Yftah Ziser and Yifei Xie and Shay B. Cohen and Tiejun Ma},
+      year={2024},
+      eprint={2411.12064},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2411.12064}, 
+}
+```
+
 ## 1. Environment Setup
 
 - Create conda environment
