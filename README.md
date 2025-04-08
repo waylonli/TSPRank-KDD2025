@@ -3,7 +3,7 @@
 [![ACM](https://img.shields.io/static/v1?label=ACM&message=10.1145/3690624.3709234&color=blue&logo=acm)](https://dl.acm.org/doi/10.1145/3690624.3709234)
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=2411.12064&color=red&logo=arxiv)](https://arxiv.org/abs/2411.12064) (including complete result tables)
 
-Weixian Waylon Li, Yftah Ziser, Yifei Xie, Shay B. Cohen, and Tiejun Ma. 2025. TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model. In Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1 (KDD '25). Association for Computing Machinery, New York, NY, USA, 707–718. https://doi.org/10.1145/3690624.3709234
+Weixian Waylon Li, Yftah Ziser, Yifei Xie, Shay B. Cohen, and Tiejun Ma. 2025. TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model. In Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1 (KDD '25). Association for Computing Machinery, New York, NY, USA, 707–718.
 
 ### Citation
 
