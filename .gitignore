@@ -3,3 +3,4 @@
 /.idea/
 checkpoints.zip
 *.zip
+.DS_Store
