@@ -1,18 +1,28 @@
 # [KDD'25] TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model
 
+Weixian Waylon Li, Yftah Ziser, Yifei Xie, Shay B. Cohen, and Tiejun Ma. 2025. TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model. In Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1 (KDD '25). Association for Computing Machinery, New York, NY, USA, 707–718. https://doi.org/10.1145/3690624.3709234
+
+[![ACM](https://img.shields.io/static/v1?label=ACM&message=10.1145/3690624.3709234&color=blue&logo=acm)](https://dl.acm.org/doi/10.1145/3690624.3709234)
 [![Arxiv link](https://img.shields.io/static/v1?label=arXiv&message=2411.12064&color=red&logo=arxiv)](https://arxiv.org/abs/2411.12064) (including complete result tables)
 
 ### Citation
 
 ```
-@misc{li2024tsprankbridgingpairwiselistwise,
-      title={TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model}, 
-      author={Weixian Waylon Li and Yftah Ziser and Yifei Xie and Shay B. Cohen and Tiejun Ma},
-      year={2024},
-      eprint={2411.12064},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2411.12064}, 
+@inproceedings{10.1145/3690624.3709234,
+author = {Li, Weixian Waylon and Ziser, Yftah and Xie, Yifei and Cohen, Shay B. and Ma, Tiejun},
+title = {TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model},
+year = {2025},
+isbn = {9798400712456},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3690624.3709234},
+doi = {10.1145/3690624.3709234},
+booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1},
+pages = {707–718},
+numpages = {12},
+keywords = {learning-to-rank, pairwise-listwise ranking, travelling salesman problem},
+location = {Toronto ON, Canada},
+series = {KDD '25}
 }
 ```
 
