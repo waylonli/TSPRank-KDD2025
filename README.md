@@ -43,6 +43,8 @@ Download the preprocessed data and pretrained models from the following link:
 - Data: https://bollin.inf.ed.ac.uk/public/direct/tsprank/data.zip (15.5GB)
 - Pretrained model checkpoints: https://bollin.inf.ed.ac.uk/public/direct/tsprank/checkpoints.zip (13.6GB)
 
+[Backup Link](https://drive.google.com/drive/folders/11R6GbdQh3PX8-pvoTBkKANoMIVnBqRs-?usp=sharing)
+
 After downloaded, extract the "data" and "checkpoints" folders into the project's root directory for use.
 
 ## 3. Reproduce Results
