@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Research project icon">
+  <defs>
+    <linearGradient id="g" x1="14" y1="12" x2="82" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6ee7f9"/>
+      <stop offset="0.55" stop-color="#8ab4ff"/>
+      <stop offset="1" stop-color="#f0abfc"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="26" fill="#0b1020"/>
+  <path d="M24 28h48L50 48l22 20H24l22-20L24 28Z" fill="none" stroke="url(#g)" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="24" cy="28" r="5" fill="#6ee7f9"/>
+  <circle cx="72" cy="28" r="5" fill="#8ab4ff"/>
+  <circle cx="24" cy="68" r="5" fill="#86efac"/>
+  <circle cx="72" cy="68" r="5" fill="#f0abfc"/>
+</svg>

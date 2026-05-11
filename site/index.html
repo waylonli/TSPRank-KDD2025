@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TSPRank | KDD 2025</title>
+    <meta
+      name="description"
+      content="TSPRank: a KDD 2025 pairwise-listwise ranking method using a bilinear Travelling Salesman model."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <meta property="og:title" content="TSPRank | KDD 2025" />
+    <meta
+      property="og:description"
+      content="Bridging pairwise and listwise learning-to-rank with combinatorial optimization."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="glow glow-cyan"></div>
+    <div class="glow glow-violet"></div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top"><span>∑</span>TSPRank</a>
+        <div class="nav-links">
+          <a href="#method">Method</a>
+          <a href="#results">Results</a>
+          <a href="#citation">Citation</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">KDD 2025 · Learning to Rank · Combinatorial Optimization</p>
+          <h1>TSPRank</h1>
+          <p class="subtitle">
+            Bridging pairwise and listwise ranking with a bilinear Travelling Salesman model.
+          </p>
+          <p class="lede">
+            TSPRank learns pairwise transition scores between ranking entities, converts them into a
+            directed graph, and uses TSP optimization to recover a globally coherent listwise ranking.
+          </p>
+          <p class="authors">
+            Weixian Waylon Li · Yftah Ziser · Yifei Xie · Shay B. Cohen · Tiejun Ma
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/waylonli/TSPRank-KDD2025" rel="noreferrer">Code</a>
+            <a class="button secondary" href="https://dl.acm.org/doi/10.1145/3690624.3709234" rel="noreferrer">ACM Paper</a>
+            <a class="button secondary" href="https://arxiv.org/abs/2411.12064" rel="noreferrer">arXiv</a>
+            <a class="button ghost" href="https://bollin.inf.ed.ac.uk/public/direct/tsprank/data.zip" rel="noreferrer">Data</a>
+            <a class="button ghost" href="https://bollin.inf.ed.ac.uk/public/direct/tsprank/checkpoints.zip" rel="noreferrer">Checkpoints</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="TSPRank overview">
+          <div class="route-card">
+            <div class="node-row">
+              <span>e₁</span>
+              <span>e₂</span>
+              <span>e₃</span>
+              <span>e₄</span>
+            </div>
+            <div class="route-line"></div>
+            <h2>Pairwise scores → global route</h2>
+            <p>
+              A bilinear scorer builds an adjacency matrix. Local and global learning then align
+              pairwise preferences with final listwise inference.
+            </p>
+          </div>
+          <div class="metric-strip">
+            <div><strong>3</strong><span>Domains</span></div>
+            <div><strong>TSP</strong><span>Solver</span></div>
+            <div><strong>2</strong><span>Training modes</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="paper-card" id="method">
+        <div class="section-heading">
+          <p class="eyebrow">Method</p>
+          <h2>Ranking as graph optimization</h2>
+          <p>
+            The model takes embeddings from a Transformer encoder or another backbone model, scores
+            pairwise directed edges with a trainable bilinear form, and ranks entities by solving
+            for the best route through the graph.
+          </p>
+        </div>
+
+        <figure class="figure wide">
+          <img
+            src="./assets/tsprank/architecture.png"
+            alt="TSPRank architecture: encoder embeddings, bilinear scorer, adjacency matrix, local learning, global learning, and TSP solver."
+          />
+          <figcaption>
+            TSPRank pipeline: backbone embeddings, bilinear pairwise scores, local matrix learning,
+            and global solver-aware learning.
+          </figcaption>
+        </figure>
+
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Pairwise modeling</h3>
+            <p>
+              Scores directed entity pairs, preserving inter-entity relationships that pointwise
+              methods cannot express.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Listwise decoding</h3>
+            <p>
+              Uses TSP inference to choose one coherent ordering rather than independent pairwise
+              wins.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Backbone compatible</h3>
+            <p>
+              Works as an additional ranking component on top of domain-specific embeddings.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="paper-card" id="results">
+        <div class="section-heading">
+          <p class="eyebrow">Results</p>
+          <h2>Robust gains across ranking domains</h2>
+          <p>
+            Experiments evaluate TSPRank on stock ranking, MQ2008 information retrieval, and OTD2
+            historical event ordering.
+          </p>
+        </div>
+
+        <div class="results-grid">
+          <article>
+            <strong>0.0447</strong>
+            <h3>NASDAQ Kendall’s τ</h3>
+            <p>TSPRank-Global improves over LambdaMART at 0.0071 and Rankformer at 0.0110.</p>
+          </article>
+          <article>
+            <strong>0.8884</strong>
+            <h3>MQ2008 NDCG@10</h3>
+            <p>Top-10 retrieval setting with the strongest reported NDCG@10.</p>
+          </article>
+          <article>
+            <strong>0.6302</strong>
+            <h3>OTD2 Kendall’s τ</h3>
+            <p>Historical event ordering at group size 30 using text-embedding-3-small.</p>
+          </article>
+        </div>
+
+        <div class="figure-grid">
+          <figure class="figure">
+            <img
+              src="./assets/tsprank/rankformer-prediction.png"
+              alt="Rankformer prediction visualization on historical event ordering."
+            />
+            <figcaption>Rankformer predictions.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              src="./assets/tsprank/tsprank-prediction.png"
+              alt="TSPRank prediction graph visualization on historical event ordering."
+            />
+            <figcaption>TSPRank predictions with global graph structure.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="paper-card" id="citation">
+        <div class="citation-header">
+          <div>
+            <p class="eyebrow">Citation</p>
+            <h2>Reference TSPRank</h2>
+          </div>
+          <button class="copy-button" type="button" data-copy-target="bibtex">Copy BibTeX</button>
+        </div>
+        <pre><code id="bibtex">@inproceedings{10.1145/3690624.3709234,
+  author = {Li, Weixian Waylon and Ziser, Yftah and Xie, Yifei and Cohen, Shay B. and Ma, Tiejun},
+  title = {TSPRank: Bridging Pairwise and Listwise Methods with a Bilinear Travelling Salesman Model},
+  year = {2025},
+  publisher = {Association for Computing Machinery},
+  doi = {10.1145/3690624.3709234},
+  booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1},
+  pages = {707--718},
+  series = {KDD '25}
+}</code></pre>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Built for GitHub Pages.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
