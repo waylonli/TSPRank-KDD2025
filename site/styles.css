@@ -158,10 +158,10 @@ h1 {
   max-width: 1040px;
   margin: 0 auto 20px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.65rem, 6.2vw, 5.2rem);
+  font-size: clamp(2.2rem, 4.4vw, 3.85rem);
   font-weight: 650;
-  line-height: 1.02;
-  letter-spacing: -0.055em;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
 }
 
 h2 {
